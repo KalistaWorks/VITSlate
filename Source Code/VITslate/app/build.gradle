@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.slate.vit.vitslate"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 7
+        versionName "1.7"
+        renderscriptTargetApi 20
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories{
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar' ,'*.aar' ])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+
+    compile files('libs/jsoup-1.8.1.jar')
+    compile files('libs/activeandroid-3.0.jar')
+
+    //Core card library
+    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
+    //Optional for built-in cards
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.1.0'
+    //Optional for RecyclerView
+    compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.1.0'
+
+    compile 'com.github.shell-software:fab:1.1.2'
+
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+
+    compile 'com.github.rey5137:material:1.2.1'
+
+//  compile 'com.github.amlcurran.showcaseview:library:5.0.0'
+
+    compile 'com.github.deano2390:MaterialShowcaseView:1.0.5@aar'
+
+    compile 'com.github.traex.rippleeffect:library:1.3'
+
+}

@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.slate.vit.vitslate.Team">
+
+    <TextView
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="4dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tapHere"
+        android:textSize="22dp"
+        android:text="Tap picture to see what Slate has to say..."
+        android:textColor="#9E9E9E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more1"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                rv_centered="true">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="150dp"
+                    android:layout_height="199dp"
+                    android:id="@+id/user"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginTop="5dp" />
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more2"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/more1"
+                rv_centered="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kunal"
+                    android:background="@drawable/slate_kunal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/user" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more3"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/more2"
+                rv_centered="true">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aayush"
+                android:background="@drawable/slate_aayush"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/kunal" />
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more4"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/more3"
+                rv_centered="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saurabh"
+                    android:background="@drawable/slate_saurabh"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/aayush" />
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more5"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/more4"
+                rv_centered="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/akshay"
+                    android:layout_below="@+id/saurabh"
+                    android:background="@drawable/slate_akshay"
+                    android:layout_centerHorizontal="true"/>
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more6"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                rv_centered="true"
+                android:layout_below="@+id/more5">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ghanu"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/slate_ghanshyam"
+                    android:layout_below="@+id/akshay" />
+            </com.andexert.library.RippleView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

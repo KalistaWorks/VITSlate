@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_bar">#035de7</color>
+    <color name="button_color">#FF4081</color>
+    <color name="button_colorPressed">#E91E63</color>
+
+
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/captcha"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        />
+
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+             android:padding="10dp"
+        >
+            <EditText
+            android:id="@+id/takeCaptcha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Captcha here..."
+            android:textColorHint="#17850C"
+            android:singleLine="true"
+            android:capitalize="characters"
+            android:textColor="#17850C"
+            android:maxLength="6"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

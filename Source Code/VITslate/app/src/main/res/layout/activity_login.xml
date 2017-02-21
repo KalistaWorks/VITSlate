@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  tools:context=".Login"
+    android:background="@drawable/login"
+    android:weightSum="2"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uLine1"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/undline"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uname"
+        android:layout_alignBottom="@+id/uLine1"
+        android:layout_alignLeft="@+id/uLine1"
+        android:layout_alignStart="@+id/uLine1"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/uname"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uname_take"
+        android:layout_alignBottom="@+id/uLine1"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/transparent"
+        android:hint="Reg no"
+
+        android:textSize="30sp"
+        android:capitalize="characters"
+        android:maxLength="9"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:src="@drawable/password"
+        android:layout_alignTop="@+id/uLine1"
+        android:layout_alignLeft="@+id/uLine1"
+        android:layout_alignStart="@+id/uLine1"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uLine2"
+        android:src="@drawable/undline"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_take"
+        android:inputType="textPassword"
+
+        android:layout_alignBottom="@+id/uLine2"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/transparent"
+        android:hint="Password"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/LoginButtonBackground"
+        android:src="@drawable/login_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:id="@+id/login_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        style="?android:attr/buttonStyleSmall"
+        android:background="?android:attr/selectableItemBackground"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo_text"
+        android:id="@+id/logoText1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"/>
+
+
+
+
+</RelativeLayout>

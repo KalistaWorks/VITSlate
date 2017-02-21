@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+
+
+<RelativeLayout
+        android:id="@+id/RelLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.rey.material.widget.Button
+            style="Material.Drawable.Ripple.Touch"
+            android:background="@null"
+            android:id="@+id/buttonSelectAll"
+            android:textColor="@color/action_bar"
+            app:rd_enable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select all"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            />
+
+        <com.rey.material.widget.Button
+            android:background="@null"
+            style="Material.Drawable.Ripple.Touch"
+            app:rd_enable="true"
+            android:id="@+id/buttonDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/action_bar"
+            android:text="Download"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            />
+
+<!--
+    <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/buttonSelectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar"
+            android:text="Select all"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            />
+
+
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id="@+id/buttonDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar"
+            android:text="Download"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            />
+
+-->
+
+        <LinearLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".Subslot"
+            android:layout_below="@+id/buttonDownload"
+
+         >
+
+
+                <ListView
+                    android:id="@+id/listMaterial"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+
+                >
+                </ListView>
+
+
+        </LinearLayout>
+
+
+
+        <com.software.shell.fab.ActionButton
+            android:id="@+id/action_button"
+            fab:image_size="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <!--for Nav Drawer UI -->
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+</android.support.v4.widget.DrawerLayout>
